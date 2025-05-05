@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# Welcome 獨飲品書香の个人网站
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 网站建设记录
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+| 序号  |    日期    |              主要工作              |
+| :---: | :--------: | :--------------------------------: |
+|   1   | 2025-05-05 | 启动网站建设，摸索如何自动生成网站 |
