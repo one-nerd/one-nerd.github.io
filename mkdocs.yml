@@ -1,4 +1,54 @@
-site_name: My site
+site_name: 獨飲的生活杂记
+site_description: 爱工作 爱生活
+site_author: 獨飲品書香
 site_url: https://one-nerd.github.io
+
 theme:
   name: material
+  language: zh # 设置语言-中文简体
+  # 设置logo
+  # logo: assets/logo.png
+  # 设置字体
+  font:
+    text: Roboto Mono
+
+  # 设置白色主题、黑色主题
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+      primary: black # 设置主题颜色
+      accent: deep orange # 设置强调色
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+      primary: white # 设置主题颜色
+      accent: deep orange # 设置强调色
+
+  features:
+    - navigation.instant # 启用即时导航
+    - navigation.instant.progress # 启用进度条
+    - navigation.tracking # 启用锚点跟踪
+    - navigation.tabs # 导航选项卡
+    - navigation.tabs.sticky # 固定导航选项卡
+    - navigation.expand # 启用导航选项卡的展开功能
+    - navigation.indexes # 启用导航索引
+    - toc.follow # 启用导航索引的跟随功能
+    - navigation.top # 启用导航索引的顶部功能
+    - search.suggest # 启用搜索建议
+    - search.highlight # 启用搜索高亮
+    - header.autohide # 启用自动隐藏
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+#extra:
+#  homepage: https://one-nerd.github.io
