@@ -1,7 +1,7 @@
 site_name: 獨飲的生活杂记
 site_description: 爱工作 爱生活
 site_author: 獨飲品書香
-site_url: https://one-nerd.github.io
+site_url: https://mage-space.com
 
 theme:
   name: material
@@ -17,7 +17,7 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/toggle-switch
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: black # 设置主题颜色
       accent: deep orange # 设置强调色
@@ -25,7 +25,7 @@ theme:
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/toggle-switch
         name: Switch to light mode
       primary: white # 设置主题颜色
       accent: deep orange # 设置强调色
