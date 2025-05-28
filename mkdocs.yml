@@ -36,16 +36,20 @@ theme:
     - navigation.tracking # 启用锚点跟踪
     - navigation.tabs # 导航选项卡
     - navigation.tabs.sticky # 固定导航选项卡
-    - navigation.expand # 启用导航选项卡的展开功能
+    # - navigation.expand # 启用导航选项卡的展开功能
     - navigation.indexes # 启用导航索引
     - toc.follow # 启用导航索引的跟随功能
     - navigation.top # 启用导航索引的顶部功能
     - search.suggest # 启用搜索建议
     - search.highlight # 启用搜索高亮
     - header.autohide # 启用自动隐藏
+    - navigation.path # 启用导航索引的导航路径功能
 
 plugins:
   - search
+
+extra_css:
+  - stylesheets/extra.css
 
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/
 # 给出的推荐配置
@@ -64,8 +68,8 @@ markdown_extensions:
   # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem:
-      smart_enable: all
+  ## - pymdownx.betterem:
+  ##    smart_enable: all
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
