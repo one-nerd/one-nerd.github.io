@@ -41,7 +41,7 @@
 /* 设置所有标题字体 */
 :root {
 
-    --text-size: 18px;
+    /*--text-size: 12px;*/
     /* 字体大小 */
     --text-color: #333333;
     --monospace: "Iosevka Curly", "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan;
@@ -76,11 +76,11 @@
 }
 
 
-html {
+.md-content html {
     font-size: var(--text-size);
 }
 
-body {
+.md-content body {
     font-family: var(--text-font) !important;
     color: var(--text-color);
     -webkit-font-feature-settings: "liga"on, "calt"on;
@@ -92,16 +92,16 @@ body {
     overflow-x: hidden;
 }
 
-p {
+.md-content p {
     line-height: var(--text-line-height);
 }
 
-strong {
+.md-content strong {
     color: var(--strong-color);
     font-weight: bold;
 }
 
-img {
+.md-content img {
     border-left: none;
     border-right: none;
     vertical-align: baseline;
@@ -111,12 +111,12 @@ img {
     /* 为图片添加圆角效果，使边角更加柔和，提升视觉美感。 */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.md-content h1,
+.md-content h2,
+.md-content h3,
+.md-content h4,
+.md-content h5,
+.md-content h6 {
     font-family: var(--title-font);
     position: relative;
     margin-top: 2rem;
@@ -127,65 +127,70 @@ h6 {
     color: var(--title-color);
 }
 
-h1 {
+.md-content h1 {
     font-size: 2rem;
     text-align: center;
     margin-top: 0;
 }
 
-h2 {
+.md-content h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
 
-h3 {
+.md-content h3 {
     font-size: 1.4rem;
 }
 
-h4 {
+.md-content h4 {
     font-size: 1.2rem;
 }
 
-h5 {
+.md-content h5 {
     font-size: 1rem;
 }
 
-h6 {
+.md-content h6 {
     font-size: 1rem;
 }
 
 
-h1 tt,
-h1 code {
+.md-content h1 tt,
+.md-content h1 code {
     font-size: inherit !important;
 }
 
-h2 tt,
-h2 code {
+.md-content h2 tt,
+.md-content h2 code {
     font-size: inherit !important;
 }
 
-h3 tt,
-h3 code {
+.md-content h3 tt,
+.md-content h3 code {
     font-size: inherit !important;
 }
 
-h4 tt,
-h4 code {
+.md-content h4 tt,
+.md-content h4 code {
     font-size: inherit !important;
 }
 
-h5 tt,
-h5 code {
+.md-content h5 tt,
+.md-content h5 code {
     font-size: inherit !important;
 }
 
-h6 tt,
-h6 code {
+.md-content h6 tt,
+.md-content h6 code {
     font-size: inherit !important;
 }
 
-p, blockquote, ul, ol, dl, table {
+.md-content p,
+.md-content blockquote,
+.md-content ul,
+.md-content ol,
+.md-content dl,
+.md-content table {
     margin: var(--p-spacing) 0;
 }
 
