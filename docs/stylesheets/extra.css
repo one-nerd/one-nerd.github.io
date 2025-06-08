@@ -37,12 +37,18 @@
     font-style: italic;
 }
 
+/* 媒体查询 */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
 
 /* 设置所有标题字体 */
 :root {
 
     /*--text-size: 12px;*/
-    /* 字体大小 */
+    /* 调整为你想要的大小 */
     --text-color: #333333;
     --monospace: "Iosevka Curly", "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan;
     /*后备字体，首先使用JetBrains Mono/
@@ -76,11 +82,13 @@
 }
 
 
-.md-content html {
+.md-typeset html {
     font-size: var(--text-size);
+    font-size: 1.1rem;
+    /* 或者使用相对单位 */
 }
 
-.md-content body {
+.md-typeset body {
     font-family: var(--text-font) !important;
     color: var(--text-color);
     -webkit-font-feature-settings: "liga"on, "calt"on;
@@ -92,16 +100,16 @@
     overflow-x: hidden;
 }
 
-.md-content p {
+.md-typeset p {
     line-height: var(--text-line-height);
 }
 
-.md-content strong {
+.md-typeset strong {
     color: var(--strong-color);
     font-weight: bold;
 }
 
-.md-content img {
+.md-typeset img {
     border-left: none;
     border-right: none;
     vertical-align: baseline;
@@ -111,12 +119,12 @@
     /* 为图片添加圆角效果，使边角更加柔和，提升视觉美感。 */
 }
 
-.md-content h1,
-.md-content h2,
-.md-content h3,
-.md-content h4,
-.md-content h5,
-.md-content h6 {
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
     font-family: var(--title-font);
     position: relative;
     margin-top: 2rem;
@@ -127,30 +135,30 @@
     color: var(--title-color);
 }
 
-.md-content h1 {
-    font-size: 2rem;
+.md-typeset h1 {
+    font-size: 1.8rem;
     text-align: center;
     margin-top: 0;
 }
 
-.md-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+.md-typeset h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.1rem;
 }
 
-.md-content h3 {
-    font-size: 1.4rem;
+.md-typeset h3 {
+    font-size: 1.1rem;
 }
 
-.md-content h4 {
-    font-size: 1.2rem;
-}
-
-.md-content h5 {
+.md-typeset h4 {
     font-size: 1rem;
 }
 
-.md-content h6 {
+.md-typeset h5 {
+    font-size: 1rem;
+}
+
+.md-typeset h6 {
     font-size: 1rem;
 }
 
@@ -193,6 +201,9 @@
 .md-content table {
     margin: var(--p-spacing) 0;
 }
+
+
+
 
 
 
