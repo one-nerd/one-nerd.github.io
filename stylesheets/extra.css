@@ -1,0 +1,264 @@
+@import url(./onenerd/font.css);
+
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: local('JetBrains Mono'),
+        url('.onenerd/JetBrainsMono-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: local('JetBrains Mono'),
+        url('.onenerd/JetBrainsMono-Italic.woff2') format('woff2');
+    font-display: swap;
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: local('JetBrains Mono'),
+        url('.onenerd/JetBrainsMono-Bold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: local('JetBrains Mono'),
+        url('.onenerd/JetBrainsMono-BoldItalic.woff2') format('woff2');
+    font-display: swap;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* 设置所有标题字体 */
+:root {
+
+    /*--text-size: 12px;*/
+    /* 调整为你想要的大小 */
+    --text-color: #333333;
+    --monospace: "Iosevka Curly", "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, "Ubuntu Mono", Consolas, HYZhengYuan;
+    /*后备字体，首先使用JetBrains Mono/
+    --text-font: var(--monospace);
+    /*正文字体*/
+    --title-font: var(--monospace);
+    /*标题字体*/
+    --latex-font: var(--monospace);
+    /*LaTeX字体(不含英语)*/
+
+    --text-line-height: 1.6;
+    /*正文行间距*/
+    --text-line-height: 1.6;
+    /*正文行间距*/
+    --code-line-height: 1.6;
+    /*代码块行间距*/
+    --p-spacing: 0.8rem;
+    /*段间距*/
+
+
+    --title-color: #135ce0;
+    --bg-color: #ffffff;
+    --strong-color: var(--title-color);
+
+    --table-border-color: #dfe2e5;
+    --table-header-bg-color: #f6f8fa;
+    --table-bg-color: var(--bg-color);
+    --table-n2-bg-color: #f6f8fa;
+
+
+}
+
+
+.md-typeset html {
+    font-size: var(--text-size);
+    font-size: 1.1rem;
+    /* 或者使用相对单位 */
+}
+
+.md-typeset body {
+    font-family: var(--text-font) !important;
+    color: var(--text-color);
+    -webkit-font-feature-settings: "liga"on, "calt"on;
+    font-feature-settings: "liga"on, "calt"on;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.md-typeset p {
+    line-height: var(--text-line-height);
+}
+
+.md-typeset strong {
+    color: var(--strong-color);
+    font-weight: bold;
+}
+
+.md-typeset img {
+    border-left: none;
+    border-right: none;
+    vertical-align: baseline;
+    /* vertical-align: baseline 将图片的基线
+    与父元素的基线对齐，消除底部间隙。 */
+    border-radius: 2px;
+    /* 为图片添加圆角效果，使边角更加柔和，提升视觉美感。 */
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    font-family: var(--title-font);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    color: var(--title-color);
+}
+
+.md-typeset h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.md-typeset h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.1rem;
+}
+
+.md-typeset h3 {
+    font-size: 1.1rem;
+}
+
+.md-typeset h4 {
+    font-size: 1rem;
+}
+
+.md-typeset h5 {
+    font-size: 1rem;
+}
+
+.md-typeset h6 {
+    font-size: 1rem;
+}
+
+
+.md-content h1 tt,
+.md-content h1 code {
+    font-size: inherit !important;
+}
+
+.md-content h2 tt,
+.md-content h2 code {
+    font-size: inherit !important;
+}
+
+.md-content h3 tt,
+.md-content h3 code {
+    font-size: inherit !important;
+}
+
+.md-content h4 tt,
+.md-content h4 code {
+    font-size: inherit !important;
+}
+
+.md-content h5 tt,
+.md-content h5 code {
+    font-size: inherit !important;
+}
+
+.md-content h6 tt,
+.md-content h6 code {
+    font-size: inherit !important;
+}
+
+.md-content p,
+.md-content blockquote,
+.md-content ul,
+.md-content ol,
+.md-content dl,
+.md-content table {
+    margin: var(--p-spacing) 0;
+}
+
+
+
+
+
+
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: var(--horizontal-divider-color);
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+ul, ol {
+    padding-inline-start: 2em;
+}
+
+table tr {
+    border-top: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 0;
+}
+
+table th {
+    font-weight: bold;
+    border: .1em solid var(--table-border-color);
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table td {
+    border: .1em solid var(--table-border-color);
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table thead {
+    background-color: var(--table-header-bg-color);
+}
